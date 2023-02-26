@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
+    <>
     <Component {...pageProps} />
     <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
     <script>
@@ -13,5 +14,6 @@ export default function App({ Component, pageProps }: AppProps) {
         'floating-chat.donateButton.text-color': '#fff'
       });
     </script>
+    </>
   )
 }
